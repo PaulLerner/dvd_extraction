@@ -2,42 +2,45 @@ from xml.dom import minidom
 import subprocess 
 import os 
 
-class Ripper(object):
-
-    ''' Process the lsdvd command and return the file '''
+class Ripper(object): 
         
-    def lsdvd(self):
+    def lsdvd(self, name, season, first, last):
+        ''' Process the lsdvd command and return the file '''
         with open(os.devnull, mode='w') as f:
-            doc = subprocess.check_output(
-            ['lsdvd', '-x', '-Ox', '/dev/dvd'], stderr = f, timeout=5)
+            doc = subprocess.check_output([
+            'lsdvd', '-x', '-Ox', 
+            f'/vol/work3/bouteiller/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}'], 
+            stderr = f, timeout=5)
         return doc 
         
-    ''' Encode and recode the file to make sure there is no encoding problem  '''
-    
     def recode(self, doc):
+        ''' Encode and recode the file to make sure there is no encoding problem  '''
         doc = doc.decode('utf-8', 'ignore').replace('&', '')
         doc = doc.encode('utf-8')
         return doc
     
-    ''' Create the .mkv file of each episode '''
+    
         
     def rip(self, episodes, name, season, first):
-
+        ''' Create the .mkv file of each episode '''
         i = first
+        int(season)
         
-        if not os.path.exists(name):
-            os.makedirs(name)
-        if not os.path.exists(name + '/' + season):
-            os.makedirs(name + '/' +season)
+        if not os.path.exists(f'{name}'):
+            os.makedirs(f'{name}')
+        if not os.path.exists(f'{name}/{int(season):02d}'):
+            os.makedirs(f'{name}/{int(season):02d}')
         
         with open(os.devnull, mode='w') as f:
-            for e in episodes:    
-                subprocess.call(
-                ['HandBrakeCLI', '-i', '/dev/dvd', '-t', e.title, '-o', 
-                name + '/' + season + '/' +
-                name + '.Season' + season + '.Episode' + '0' + str(i) +'.mkv',
-                '--cfr', '-r', '25', '--all-audio', '--all-subtitles'])             
+            for e in episodes:   
+                subprocess.call([                
                 
+                'HandBrakeCLI', '-i', '/dev/dvd', '-t', e.title, '-o', 
+                f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
+                '--cfr', '-r', '25', '--all-audio', '--all-subtitles' 
+                
+                ])            
+
                 i += 1
                 
     def rip_audio(self, audios, episodes, name, season, first): 
@@ -47,28 +50,29 @@ class Ripper(object):
         with open(os.devnull, mode='w') as f:
             for e in episodes:    
                 for a in audios:
-                    subprocess.call(
-                    ['ffmpeg', '-i', './' + name + '/' + season + '/' + 
-                    name + '.Season' + season + '.Episode' + '0' + str(i) + '.mkv',
+                    subprocess.call([
+                    
+                    'ffmpeg',
+                    '-i', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
                     '-map', '0:' + a.title, '-y',
-                    './' + name + '/' + season + '/' + name + '.Season' + season + 
-                    '.Episode' + '0' + str(i) + a.language + '.wav'])                
-                
+                    f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{a.language}48kHz.wav'])
+                    
+                    subprocess.call([
+                    
+                    'ffmpeg', 
+                    '-i', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
+                    '-map', '0:' + a.title, '-y', '-ar', '16000', '-ac', '1',
+                    f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{a.language}16kHz.wav'])
+                                    
                 i += 1
                       
-
-
-
-       
-    ''' Return the title written in the file '''
-    
     def get_contentTitle(self, content):
+        ''' Return the title written in the file '''
         contentTitle = content.getElementsByTagName('title')[0].firstChild.data
         return contentTitle
-        
-    ''' Return the list of the tracks in the file with their title and duration '''
-        
+      
     def get_tracks(self, content):
+        ''' Return the list of the tracks in the file with their title and duration '''
         track = content.getElementsByTagName('track')
         tracks = []
 
@@ -81,11 +85,9 @@ class Ripper(object):
             t = Track(ix.firstChild.data, length.firstChild.data)
             tracks.append(t)
         return tracks
-        
-    ''' Return the list of languages of the content '''
-    
+ 
     def get_languages(self, content, first, last):
-        
+        ''' Return the list of languages of the content '''    
         audios = []
         languages = []    
         
@@ -129,10 +131,9 @@ class Ripper(object):
             audios.remove(audios[r])
                
         return audios
-   
-    ''' Return the list of real episodes from the tracks list '''    
 
     def get_episodes(self, tracks, first, last):
+        ''' Return the list of real episodes from the tracks list '''
         episodes = []
         nbEpisodes = (last - first) + 1
 
@@ -148,10 +149,9 @@ class Ripper(object):
             for i in range(0,nbEpisodes):
                 episodes.append(tracks[i])
         return episodes     
-        
-    ''' Return the tracks list sorted by their duration (top-down) '''    
-        
+    
     def sort_tracks(self, tracks):
+        ''' Return the tracks list sorted by their duration (top-down) '''
         swap = True
         i = 0
         while swap == True:
@@ -183,23 +183,21 @@ class Ripper(object):
                     swap = True
                     episodes[j],episodes[j+1] = episodes[j+1],episodes[j]
         return episodes
-
-    ''' Display the tracks '''
-                
+           
     def print_tracks(self, tracks):
+        ''' Display the tracks '''
         for t in tracks:
             print('Title ' + t.title + ' : ' + str(t.duration))              
-
-    ''' Display the episodes '''
-            
+         
     def print_episodes(self, episodes):
+        ''' Display the episodes '''
         i = 1
         for e in episodes:
             print('Episode ' + str(i) + ' : title -> ' + e.title + ' | duration -> ' + str(e.duration))
             i += 1
-            
-    ''' Display the content title '''
+
     def print_contentTitle(self, content):
+        ''' Display the content title '''
         print('Content title : ' + self.get_contentTitle(content))
     
 
@@ -217,22 +215,3 @@ class Audio:
         self.channels = int(channels)
 
 
-    
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
