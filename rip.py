@@ -31,7 +31,7 @@ last   = int(arguments.get('--to'))
 
 ripper = Ripper()
 
-doc = ripper.lsdvd()
+doc = ripper.lsdvd(name,season,first,last)
 doc = ripper.recode(doc)
 
 content = minidom.parseString(doc)
@@ -50,21 +50,6 @@ for a in audios:
     print(a.language + '   ' + str(a.channels))
 
 ripper.rip(episodes, name, season, first)
-ripper.rip_audio(audios, episodes, name, season, first) 
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ripper.rip_audio(audios, episodes, name, season, first)
+
+       
