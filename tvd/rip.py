@@ -21,7 +21,7 @@ class Ripper(object):
     
     
         
-    def rip(self, episodes, name, season, first):
+    def rip(self, episodes, name, season, first, last):
         ''' Create the .mkv file of each episode '''
         i = first
         int(season)
@@ -35,7 +35,7 @@ class Ripper(object):
             for e in episodes:   
                 subprocess.call([                
                 
-                'HandBrakeCLI', '-i', '/dev/dvd', '-t', e.title, '-o', 
+                'HandBrakeCLI', '-i', f'/vol/work3/bouteiller/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}', '-t', e.title, '-o', 
                 f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
                 '--cfr', '-r', '25', '--all-audio', '--all-subtitles' 
                 
@@ -63,8 +63,40 @@ class Ripper(object):
                     '-i', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
                     '-map', '0:' + a.title, '-y', '-ar', '16000', '-ac', '1',
                     f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{a.language}16kHz.wav'])
-                                    
+                                                        
                 i += 1
+                
+                
+    def rip_subtitles(self, subtitles, episodes, name, season, first, last):
+        
+        i = first
+        
+        with open(os.devnull, mode='w') as f:
+            for e in episodes:    
+                for s in subtitles:
+                    subprocess.call([ 
+                                       
+                    'mencoder', f'dvd://{e.title}', '-dvd-device',
+                    f'/vol/work3/bouteiller/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}',
+                    '-o', '/dev/null', '-nosound', '-ovc', 'copy', 
+                    '-vobsubout', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.language}',
+                    '-slang', s.langcode 
+                    
+                    ])
+                            
+                    subprocess.call([ 
+                    
+                    '/people/bredin/dev/VobSub2SRT/build/bin/vobsub2srt', 
+                    f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.language}'
+                     
+                    ])     
+                                                 
+                i += 1
+    
+    
+    
+    
+    
                       
     def get_contentTitle(self, content):
         ''' Return the title written in the file '''
@@ -131,6 +163,52 @@ class Ripper(object):
             audios.remove(audios[r])
                
         return audios
+        
+    def get_subtitles(self, content, first, last):
+    
+        subtitles = []
+    
+        tracks_content = content.getElementsByTagName('track')
+        
+        tracks   = self.get_tracks(content)
+        tracks   = self.sort_tracks(tracks)
+        episodes = self.get_episodes(tracks, first, last)
+        episodes = self.sort_episodes(episodes)
+        i = int(episodes[0].title)
+        
+        print(str(i))
+        
+        subtitle = tracks_content[i-1].getElementsByTagName('subp')
+        
+        for s in subtitle:
+            title = s.getElementsByTagName('ix')[0]
+            langcode = s.getElementsByTagName('langcode')[0]
+            language = s.getElementsByTagName('language')[0]
+            subtitles.append(Sub( title.firstChild.data, 
+                                  langcode.firstChild.data, 
+                                  language.firstChild.data ))
+                                  
+        remove = []
+            
+        for i in range(0,len(subtitles)): 
+        
+            if subtitles[i].language == 'Unknown':
+                remove.append(i)
+
+            for j in range(i+1, len(subtitles)):
+                if subtitles[i].language == subtitles[j].language:                
+                    remove.append(j)
+                                    
+        remove = list(set(remove))
+        remove = sorted(remove, reverse=True)
+        print(remove)
+        
+        for r in remove:
+            subtitles.remove(subtitles[r])
+        
+        
+        return subtitles
+
 
     def get_episodes(self, tracks, first, last):
         ''' Return the list of real episodes from the tracks list '''
@@ -213,5 +291,10 @@ class Audio:
         self.title    = str(title)
         self.language = str(language)
         self.channels = int(channels)
-
-
+        
+class Sub:
+    def __init__(self, title, langcode, language):
+        self.title    = str(title)
+        self.langcode = str(langcode)
+        self.language = str(language)
+    

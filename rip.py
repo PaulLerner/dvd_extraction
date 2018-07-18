@@ -48,8 +48,11 @@ ripper.print_episodes(episodes)
 audios = ripper.get_languages(content, first, last)
 for a in audios:
     print(a.language + '   ' + str(a.channels))
+    
+subtitles = ripper.get_subtitles(content, first, last)
+for s in subtitles:
+    print(s.langcode + '   ' + s.language)
 
-ripper.rip(episodes, name, season, first)
+ripper.rip(episodes, name, season, first, last)
 ripper.rip_audio(audios, episodes, name, season, first)
-
-       
+ripper.rip_subtitles(subtitles, episodes, name, season, first, last)
