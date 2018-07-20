@@ -48,24 +48,6 @@ subtitles = ripper.get_subtitles(content, first, last)
 for s in subtitles:
     print(s.langcode + '   ' + s.language)
 
-#ripper.rip(episodes, name, season, first, last)
-#ripper.rip_audio(audios, episodes, name, season, first)
-#ripper.rip_subtitles(subtitles, episodes, name, season, first, last)
-
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ripper.rip(episodes, name, season, first, last)
+ripper.rip_audio(audios, episodes, name, season, first)
+ripper.rip_subtitles(subtitles, episodes, name, season, first, last)
