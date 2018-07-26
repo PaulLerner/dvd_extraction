@@ -31,9 +31,11 @@ with open(os.devnull, mode='w') as f:
     
     subprocess.Popen(
         'mv ' + f'/vol/work3/bouteiller/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}/*/* ' + f'/vol/work3/bouteiller/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}', shell=True)
-
     
-    #subprocess.Popen(
-        #'rm -r ' + f'/vol/work3/bouteiller/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}/* ', shell=True)
+    subprocess.Popen('find /vol/work3/bouteiller/dvd -type d -empty -delete', shell=True)
+    
+    subprocess.Popen('eject', shell=True)
+    
+    
 
 

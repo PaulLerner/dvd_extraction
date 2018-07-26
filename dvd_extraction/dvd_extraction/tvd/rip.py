@@ -2,6 +2,8 @@ from xml.dom import minidom
 import subprocess 
 import os 
 
+path = '/vol/work3/bouteiller'
+
 class Ripper(object): 
         
     def lsdvd(self, name, season, first, last):
@@ -28,7 +30,7 @@ class Ripper(object):
         with open(os.devnull, mode='w') as f:
             doc = subprocess.check_output([
             'lsdvd', '-x', '-Ox', 
-            f'/vol/work3/bouteiller/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}'], 
+            f'{path}/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}'], 
             stderr = f, timeout=5)
         return doc 
         
@@ -84,7 +86,7 @@ class Ripper(object):
             for e in episodes:   
                 subprocess.call([                
                 
-                'HandBrakeCLI', '-i', f'/vol/work3/bouteiller/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}', '-t', e.title, '-o', 
+                'HandBrakeCLI', '-i', f'{path}/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}', '-t', e.title, '-o', 
                 f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
                 '--cfr', '-r', '25', '--all-audio', '--all-subtitles' 
                 
@@ -162,7 +164,7 @@ class Ripper(object):
                     subprocess.call([ 
                                        
                     'mencoder', f'dvd://{e.title}', '-dvd-device',
-                    f'/vol/work3/bouteiller/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}',
+                    f'{path}/dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}',
                     '-o', '/dev/null', '-nosound', '-ovc', 'copy', 
                     '-vobsubout', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}',
                     '-slang', s.langcode 
@@ -270,8 +272,6 @@ class Ripper(object):
         episodes = self.sort_episodes(episodes)
         i = int(episodes[0].title)
         
-        print(str(i))
-        
         audio = tracks_content[i-1].getElementsByTagName('audio')
         
         for a in audio:
@@ -284,14 +284,6 @@ class Ripper(object):
                     language.firstChild.data,
                     langcode.firstChild.data,
                     channels.firstChild.data))
-         
-        for a in audios:
-            for i in range(1,len(audios)):
-                if a.language == audios[i].language:
-                    if a.channels < audios[i].channels:
-                        audios.remove(audios[i])
-                    if a.channels > audios[i].channels:
-                        audios.remove(a) 
             
         remove = []    
         for i in range(0,len(audios)): 
@@ -301,7 +293,6 @@ class Ripper(object):
                                     
         remove = list(set(remove))
         remove = sorted(remove, reverse=True)
-        print(remove)
         
         for r in remove:
             audios.remove(audios[r])
