@@ -26,7 +26,7 @@ Python package for extracting video, audio and subtitles from DVDs
 Features
 --------
 
-copying the dvd :
+Copying the dvd :
     cd /vol/work3/[name]/dvd_extraction
     python dvd_extraction/copy/copy.py --series= --season= --from= --to=
 
