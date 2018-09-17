@@ -16,4 +16,6 @@ Extracting the files :
     cd /vol/work3/[name]/extracted |
     python /vol/work3/[name]/dvd_extraction/dvd_extraction/dvd_extraction.py --series= --season= --from= --to=
 
+Note that you can launch this script directly on the folder with launchRip.py /path/
+
 [name] is the name of your vol/work3 directory
