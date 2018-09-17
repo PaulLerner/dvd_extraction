@@ -15,7 +15,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/mbouteiller/dvd_extraction/issues.
+Report bugs at https://github.com/benjisympa/dvd_extraction/issues and https://github.com/mbouteiller/dvd_extraction/issues.
 
 If you are reporting a bug, please include:
 
