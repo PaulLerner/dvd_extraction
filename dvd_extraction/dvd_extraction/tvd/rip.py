@@ -3,6 +3,7 @@ import subprocess
 import os
 
 path = '/vol/work2/maurice/'
+path_vobsub2srt = '/people/bredin/dev/VobSub2SRT/build/bin/vobsub2srt'
 
 class Ripper(object):
 
@@ -79,15 +80,16 @@ class Ripper(object):
 
         if not os.path.exists(f'{name}'):
             os.makedirs(f'{name}')
-        if not os.path.exists(f'{name}/{int(season):02d}'):
-            os.makedirs(f'{name}/{int(season):02d}')
+#        if not os.path.exists(f'{name}/{int(season):02d}'):
+#            os.makedirs(f'{name}/{int(season):02d}')
 
         with open(os.devnull, mode='w') as f:
             for e in episodes:
                 subprocess.call([
 
                 'HandBrakeCLI', '-i', f'{path}dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}', '-t', e.title, '-o',
-                f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
+                #f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
+                f'{name}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
                 '--cfr', '-r', '25', '--all-audio', '--all-subtitles'
 
                 ])
@@ -122,16 +124,20 @@ class Ripper(object):
                     subprocess.call([
 
                     'ffmpeg',
-                    '-i', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
+                    #'-i', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
+                    '-i', f'{name}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
                     '-map', '0:' + a.title, '-y',
-                    f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{a.langcode}48kHz.wav'])
+                    #f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{a.langcode}48kHz.wav'])
+                    f'{name}/{name}.Season{int(season):02d}.Episode{i:02d}.{a.langcode}48kHz.wav'])
 
                     subprocess.call([
 
                     'ffmpeg',
-                    '-i', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
+                    #'-i', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
+                    '-i', f'{name}/{name}.Season{int(season):02d}.Episode{i:02d}.mkv',
                     '-map', '0:' + a.title, '-y', '-ar', '16000', '-ac', '1',
-                    f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{a.langcode}16kHz.wav'])
+                    #f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{a.langcode}16kHz.wav'])
+                    f'{name}/{name}.Season{int(season):02d}.Episode{i:02d}.{a.langcode}16kHz.wav'])
 
                 i += 1
 
@@ -162,30 +168,29 @@ class Ripper(object):
             for e in episodes:
                 for s in subtitles:
                     subprocess.call([
-
                     'mencoder', f'dvd://{e.title}', '-dvd-device',
                     f'{path}dvd/{name}.Season{int(season):02d}.Episodes{first:02d}to{last:02d}',
                     '-o', '/dev/null', '-nosound', '-ovc', 'copy',
-                    '-vobsubout', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}',
+                    #'-vobsubout', f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}',
+                    '-vobsubout', f'{name}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}',
                     '-slang', s.langcode
-
                     ])
 
-                    subprocess.call([
-
-                    '/people/bredin/dev/VobSub2SRT/build/bin/vobsub2srt',
-                    f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}'
-
-                    ])
-
-                    subprocess.call([
-                    'rm',
-                    f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}.sub'
+                    subprocess.call([path_vobsub2srt,
+                    #f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}'
+                    f'{name}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}'
                     ])
 
                     subprocess.call([
                     'rm',
-                    f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}.idx'
+                    #f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}.sub'
+                    f'{name}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}.sub'
+                    ])
+
+                    subprocess.call([
+                    'rm',
+                    #f'{name}/{int(season):02d}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}.idx'
+                    f'{name}/{name}.Season{int(season):02d}.Episode{i:02d}.{s.langcode}.idx'
                     ])
 
                 i += 1
@@ -511,16 +516,12 @@ class Ripper(object):
             content of the .xml file.
 
         """
-
         print('Content title : ' + self.get_contentTitle(content))
-
-
 
 class Track:
     def __init__(self, ix, length):
         self.title = str(ix)
         self.duration = float(length)
-
 
 class Audio:
     def __init__(self, title, language, langcode, channels):
@@ -534,7 +535,3 @@ class Sub:
         self.title    = str(title)
         self.langcode = str(langcode)
         self.language = str(language)
-
-
-
-
