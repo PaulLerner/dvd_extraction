@@ -292,13 +292,13 @@ class Ripper(object):
                         langcode.firstChild.data,
                         channels.firstChild.data))
 
-        '''for a in audios:
-            for i in range(1,len(audios)):
-                if a.language == audios[i].language:
-                    if a.channels < audios[i].channels:
-                        audios.remove(audios[i])
-                    if a.channels > audios[i].channels:
-                        audios.remove(a)'''
+#        for a in audios:
+#            for i in range(1,len(audios)):
+#                if a.language == audios[i].language:
+#                    if a.channels < audios[i].channels:
+#                        audios.remove(audios[i])
+#                    if a.channels > audios[i].channels:
+#                        audios.remove(a)
 
         remove = []
         for i in range(0,len(audios)):
