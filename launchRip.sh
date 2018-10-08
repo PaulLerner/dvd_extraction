@@ -19,6 +19,6 @@ for file in $1; do #../dvd/TheWalkingDead*; do
     echo $season
     echo $from
     echo $to
-    python dvd_extraction/dvd_extraction.py --series=$serie --season=$season --from=$from --to=$to
+    python dvd_extraction/dvd_extraction/dvd_extraction.py --series=$serie --season=$season --from=$from --to=$to
     echo '-------'
 done

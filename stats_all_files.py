@@ -12,6 +12,12 @@ args = parser.parse_args()
 
 current_directory = pathlib.Path(args.folder)
 
+def get_nb_series():
+    nb = 0
+    for folder_serie in current_directory.iterdir():
+        nb += 1
+    return nb
+
 def get_nb_all_files():
     nb = 0
     for folder_serie in current_directory.iterdir():
@@ -111,7 +117,7 @@ def get_movie_infos():
             if '.mkv' in current_file:
                 if 'GameOfThrones.Season06.Episode09.mkv' in current_file or 'GameOfThrones.Season06.Episode10.mkv' in current_file:
                     continue
-                print(current_file)
+                #print(current_file)
                 vid = Video(current_file)
                 current_file_split = current_file.split('/')[-1].split('.')
                 name = current_file_split[0]
@@ -119,20 +125,17 @@ def get_movie_infos():
                 episode = current_file_split[2].split('Episode')[1]
                 #print(vid.duration, vid.frame_rate, vid.frame_size)
                 videos = pd.concat([videos,
-                                    pd.DataFrame([[name, season, episode, vid.duration,
-                                                  vid.frame_rate, vid.frame_size[0], vid.frame_size[1]]],
+                                    pd.DataFrame([[name, season, episode, float(vid.duration),
+                                                  float(vid.frame_rate), float(vid.frame_size[0]), float(vid.frame_size[1])]],
                                    columns=['name', 'season', 'episode', 'duration', 'frame_rate', 'width', 'height'])])
+
+    print(videos.describe())#include='all'))
+
     return videos
 
-def get_nb_series():
-    nb = 0
-    for folder_serie in current_directory.iterdir():
-        nb += 1
-    return nb
-
-print(get_nb_series())
-print(get_nb_all_files())
-print(get_nb_all_episodes())
-print(get_nb_episodes_per_serie())
-print(get_stats_languages())
-print(get_movie_infos())
+print('Number of series', get_nb_series())
+print('Number of total files', get_nb_all_files())
+print('Number of episodes', get_nb_all_episodes())
+print('Number of episodes per serie', get_nb_episodes_per_serie())
+#print('Languages statistics', get_stats_languages())
+print('Movie informations', get_movie_infos())
