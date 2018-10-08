@@ -6,11 +6,17 @@ import pandas as pd
 import numpy as np
 from pyannote.video import Video
 
-parser = argparse.ArgumentParser()
-parser.add_argument("folder", help="path of the series")
-args = parser.parse_args()
+current_directory = ''
 
-current_directory = pathlib.Path(args.folder)
+def set_current_directory(folder):
+    global current_directory
+    current_directory = folder
+
+def get_nb_series():
+    nb = 0
+    for folder_serie in current_directory.iterdir():
+        nb += 1
+    return nb
 
 def get_nb_series():
     nb = 0
@@ -133,9 +139,16 @@ def get_movie_infos():
 
     return videos
 
-print('Number of series', get_nb_series())
-print('Number of total files', get_nb_all_files())
-print('Number of episodes', get_nb_all_episodes())
-print('Number of episodes per serie', get_nb_episodes_per_serie())
-#print('Languages statistics', get_stats_languages())
-print('Movie informations', get_movie_infos())
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("folder", help="path of the series")
+    args = parser.parse_args()
+
+    current_directory = pathlib.Path(args.folder)
+
+    print('Number of series', get_nb_series())
+    print('Number of total files', get_nb_all_files())
+    print('Number of episodes', get_nb_all_episodes())
+    print('Number of episodes per serie', get_nb_episodes_per_serie())
+    print('Languages statistics', get_stats_languages())
+    print('Movie informations', get_movie_infos())
