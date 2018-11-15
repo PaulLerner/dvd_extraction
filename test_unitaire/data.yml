@@ -1,164 +1,1584 @@
-GAME_OF_THRONES_S1_DISC1: 
-    series: GameOfThrones
-    season: 1
-    from: 1
-    to: 2
-    episodes: [1,2]
-    audio: [1,2,3,4,5,6]
-    
-SIX_FEET_UNDER_DISC1:
-    series: SixFeetUnder
-    season: 1
-    from: 1
-    to: 2
-    episodes: [1,2]
-    audio: [1,2]
-
-THE_OFFICE_S1_DVD1:
-    series: TheOffice
-    season: 1
-    from: 1
-    to: 6
-    episodes: [4,6,8,10,12,14]
-    audio: [1,2]    
-
-THE_OFFICE_S9_DVD5:
-    series: TheOffice
-    season: 9
-    from: 22
-    to: 25
-    episodes: [22,23,24,25]
-    audio: [1,2,3,4]    
-    
-THE_WALKING_DEAD_S1_D1:
-    series: TheWalkingDead
-    season: 1
-    from: 1
-    to: 4
-    episodes: [1,2,3,4] 
-    audio: [1,2]
-    
-BIG_BANG_THEORY_SEASON_1_DISC1:
-    series: BigBangTheory
-    season: 1
-    from: 1
-    to: 6
-    episodes: [2,3,4,5,6,7]
-    audio: [1,2]
-    
-HARRY_POTTER_PHILOSOPHERS_STON:
-    series: HarryPotter
-    season: 1
-    from: 1
-    to: 1
+24HeuresChronoRedemption.Season01.Episodes01to01:
     episodes: [1]
-    audio: [1,2,3]
-
-HOMELAND_S1_DISC1:
-    series: Homeland
-    season: 1
-    from: 1
-    to: 3
-    episodes: [1,3,4]  
+    audio: []
+24HeuresChrono.Season01.Episodes01to04:
+    episodes: [1,2,3,4]
     audio: [1,2]
-    
-PHANTOM_MENACE:
-    series: StarWars
-    season: 1
-    from: 1
-    to: 1
+24HeuresChrono.Season01.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+24HeuresChrono.Season01.Episodes09to12:
+    episodes: [1,2,3,4]
+    audio: []
+24HeuresChrono.Season01.Episodes13to16:
+    episodes: [1,2,3,4]
+    audio: []
+24HeuresChrono.Season01.Episodes17to20:
+    episodes: [1,2,3,4]
+    audio: []
+24HeuresChrono.Season01.Episodes21to24:
+    episodes: [1,2,3,4]
+    audio: []
+24HeuresChrono.Season02.Episodes01to04:
+    episodes: []
+    audio: []
+24HeuresChrono.Season02.Episodes05to08:
+    episodes: []
+    audio: []
+24HeuresChrono.Season02.Episodes09to12:
+    episodes: []
+    audio: []
+24HeuresChrono.Season02.Episodes13to16:
+    episodes: []
+    audio: []
+24HeuresChrono.Season02.Episodes17to20:
+    episodes: []
+    audio: []
+24HeuresChrono.Season02.Episodes21to24:
+    episodes: []
+    audio: []
+24HeuresChrono.Season03.Episodes01to04:
+    episodes: []
+    audio: []
+24HeuresChrono.Season03.Episodes05to08:
+    episodes: []
+    audio: []
+24HeuresChrono.Season03.Episodes09to12:
+    episodes: []
+    audio: []
+24HeuresChrono.Season03.Episodes13to16:
+    episodes: []
+    audio: []
+24HeuresChrono.Season03.Episodes17to20:
+    episodes: []
+    audio: []
+24HeuresChrono.Season03.Episodes21to24:
+    episodes: []
+    audio: []
+24HeuresChrono.Season04.Episodes01to04:
+    episodes: []
+    audio: []
+24HeuresChrono.Season04.Episodes05to08:
+    episodes: []
+    audio: []
+24HeuresChrono.Season04.Episodes09to12:
+    episodes: []
+    audio: []
+24HeuresChrono.Season04.Episodes13to16:
+    episodes: []
+    audio: []
+24HeuresChrono.Season04.Episodes17to20:
+    episodes: []
+    audio: []
+24HeuresChrono.Season04.Episodes21to24:
+    episodes: []
+    audio: []
+24HeuresChrono.Season05.Episodes01to04:
+    episodes: []
+    audio: []
+24HeuresChrono.Season05.Episodes05to08:
+    episodes: []
+    audio: []
+24HeuresChrono.Season05.Episodes09to12:
+    episodes: []
+    audio: []
+24HeuresChrono.Season05.Episodes13to16:
+    episodes: []
+    audio: []
+24HeuresChrono.Season05.Episodes17to20:
+    episodes: [2,3,4,5]
+    audio: []
+24HeuresChrono.Season05.Episodes21to24:
+    episodes: []
+    audio: []
+24HeuresChrono.Season06.Episodes01to04:
+    episodes: []
+    audio: []
+24HeuresChrono.Season06.Episodes05to08:
+    episodes: []
+    audio: []
+24HeuresChrono.Season06.Episodes09to12:
+    episodes: []
+    audio: []
+24HeuresChrono.Season06.Episodes13to16:
+    episodes: []
+    audio: []
+24HeuresChrono.Season06.Episodes17to20:
+    episodes: []
+    audio: []
+24HeuresChrono.Season06.Episodes21to24:
+    episodes: []
+    audio: []
+24HeuresChrono.Season07.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+24HeuresChrono.Season07.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+24HeuresChrono.Season07.Episodes09to12:
+    episodes: [2,3,4,5]
+    audio: []
+24HeuresChrono.Season07.Episodes13to16:
+    episodes: [2,3,4,5]
+    audio: []
+24HeuresChrono.Season07.Episodes17to20:
+    episodes: [2,3,4,5]
+    audio: []
+24HeuresChrono.Season07.Episodes21to24:
+    episodes: [2,3,4,5]
+    audio: []
+24HeuresChrono.Season08.Episodes01to04:
+    episodes: []
+    audio: []
+24HeuresChrono.Season08.Episodes05to08:
+    episodes: []
+    audio: []
+24HeuresChrono.Season08.Episodes09to12:
+    episodes: [2,3,4,5]
+    audio: []
+24HeuresChrono.Season08.Episodes13to16:
+    episodes: []
+    audio: []
+24HeuresChrono.Season08.Episodes17to20:
+    episodes: []
+    audio: []
+24HeuresChrono.Season08.Episodes21to24:
+    episodes: []
+    audio: []
+24HeuresChrono.Season09.Episodes01to03:
+    episodes: [3,4,5]
+    audio: []
+24HeuresChrono.Season09.Episodes04to06:
+    episodes: [3,4,5]
+    audio: []
+24HeuresChrono.Season09.Episodes07to09:
+    episodes: [3,4,5]
+    audio: []
+24HeuresChrono.Season09.Episodes10to12:
+    episodes: [3,4,5]
+    audio: []
+BattlestarGalacticaBloodAndChrome.Season01.Episodes01to01:
+    episodes: [23]
+    audio: []
+BattlestarGalacticaCaprica.Season01.Episodes01to01:
+    episodes: [4]
+    audio: []
+BattlestarGalacticaCaprica.Season01.Episodes02to04:
+    episodes: [7,10,11]
+    audio: []
+BattlestarGalacticaCaprica.Season01.Episodes05to08:
+    episodes: [8,11,14,17]
+    audio: []
+BattlestarGalacticaCaprica.Season01.Episodes09to11:
+    episodes: [3,6,9]
+    audio: []
+BattlestarGalacticaCaprica.Season01.Episodes12to15:
+    episodes: [6,9,23,26]
+    audio: []
+BattlestarGalacticaCaprica.Season01.Episodes16to18:
+    episodes: [4,6,8]
+    audio: []
+BattlestarGalacticaLaBatailleDeLEspaceLeFilm.Season01.Episodes01to01:
     episodes: [1]
-    audio: [1,2,3]
-
-BREAKING_BAD_SEASON_1_DISC_1:
-    series: BreakingBad
-    season: 1
-    from: 1
-    to: 3
+    audio: []
+BattlestarGalacticaRazor.Season01.Episodes01to01:
+    episodes: []
+    audio: []
+BattlestarGalactica.Season01.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season01.Episodes05to07:
+    episodes: [1,2,3]
+    audio: []
+BattlestarGalactica.Season01.Episodes08to10:
+    episodes: [1,2,3]
+    audio: []
+BattlestarGalactica.Season01.Episodes11to13:
+    episodes: [1,2,3]
+    audio: []
+BattlestarGalactica.Season02.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season02.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season02.Episodes09to10:
+    episodes: [1,2]
+    audio: []
+BattlestarGalactica.Season02.Episodes11to14:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season02.Episodes15to18:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season02.Episodes19to20:
+    episodes: [1,2]
+    audio: []
+BattlestarGalactica.Season03.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season03.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season03.Episodes09to12:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season03.Episodes13to16:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season03.Episodes17to20:
+    episodes: [1,2,3,4]
+    audio: []
+BattlestarGalactica.Season04.Episodes01to03:
+    episodes: [1,2,3]
+    audio: []
+BattlestarGalactica.Season04.Episodes04to06:
+    episodes: [1,2,3]
+    audio: []
+BattlestarGalactica.Season04.Episodes07to08:
+    episodes: [1,2]
+    audio: []
+BattlestarGalactica.Season04.Episodes09to10:
+    episodes: [1,2]
+    audio: []
+BattlestarGalactica.Season04.Episodes11to12:
+    episodes: [1,2]
+    audio: []
+BattlestarGalactica.Season04.Episodes13to15:
+    episodes: [1,2,3]
+    audio: []
+BattlestarGalactica.Season04.Episodes16to18:
+    episodes: [1,2,3]
+    audio: []
+BattlestarGalactica.Season04.Episodes19to19:
+    episodes: [1]
+    audio: []
+BattlestarGalacticaThePlan.Season01.Episodes01to01:
+    episodes: [10]
+    audio: []
+BreakingBad.Season01.Episodes01to03:
     episodes: [1,2,3]
     audio: [1,2]
-    
-FRIENDS_SERIES1_D1A:
-    series: Friends
-    season: 1
-    from: 1
-    to: 3
+BreakingBad.Season01.Episodes04to06:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season01.Episodes07to07:
+    episodes: [1]
+    audio: []
+BreakingBad.Season02.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BreakingBad.Season02.Episodes05to07:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season02.Episodes08to10:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season02.Episodes11to13:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season03.Episodes01to04:
+    episodes: [3,4,5,6]
+    audio: []
+BreakingBad.Season03.Episodes05to07:
+    episodes: []
+    audio: []
+BreakingBad.Season03.Episodes08to10:
+    episodes: []
+    audio: []
+BreakingBad.Season03.Episodes11to13:
+    episodes: []
+    audio: []
+BreakingBad.Season04.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BreakingBad.Season04.Episodes05to07:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season04.Episodes08to10:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season04.Episodes11to13:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season05.Episodes01to03:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season05.Episodes04to06:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season05.Episodes07to08:
+    episodes: [1,2]
+    audio: []
+BreakingBad.Season06.Episodes01to03:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season06.Episodes04to06:
+    episodes: [1,2,3]
+    audio: []
+BreakingBad.Season06.Episodes07to08:
+    episodes: [1,2]
+    audio: []
+BuffyContreLesVampires.Season01.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: [1,2]
+BuffyContreLesVampires.Season01.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season01.Episodes09to12:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season02.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season02.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season02.Episodes09to12:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season02.Episodes13to16:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season02.Episodes17to20:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season02.Episodes21to22:
+    episodes: [1,2]
+    audio: []
+BuffyContreLesVampires.Season03.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season03.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season03.Episodes09to11:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season03.Episodes12to15:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season03.Episodes16to19:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season03.Episodes20to22:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season04.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season04.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season04.Episodes09to11:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season04.Episodes12to15:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season04.Episodes16to19:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season04.Episodes20to22:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season05.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season05.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season05.Episodes09to11:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season05.Episodes12to15:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season05.Episodes16to19:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season05.Episodes20to22:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season06.Episodes02to04:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season06.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season06.Episodes09to11:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season06.Episodes12to15:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season06.Episodes16to19:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season06.Episodes20to22:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season07.Episodes01to04:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season07.Episodes05to08:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season07.Episodes09to11:
+    episodes: [1,2,3]
+    audio: []
+BuffyContreLesVampires.Season07.Episodes12to15:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season07.Episodes16to19:
+    episodes: [1,2,3,4]
+    audio: []
+BuffyContreLesVampires.Season07.Episodes20to22:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season01.Episodes01to03:
     episodes: [1,2,3]
     audio: [1,2,3,4,5]
-    
-24_DISC1:
-    series: 24HeuresChrono
-    season: 1
-    from: 1
-    to: 4
-    episodes: [1,2,3,4]    
+Friends.Season01.Episodes04to06:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season01.Episodes07to09:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season01.Episodes10to12:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season01.Episodes13to15:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season01.Episodes16to18:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season01.Episodes19to21:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season01.Episodes22to24:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season02.Episodes01to03:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season02.Episodes04to06:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season02.Episodes07to09:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season02.Episodes10to12:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season02.Episodes13to15:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season02.Episodes16to18:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season02.Episodes19to21:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season02.Episodes22to24:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season03.Episodes01to03:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season03.Episodes04to06:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season03.Episodes07to09:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season03.Episodes10to12:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season03.Episodes13to15:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season03.Episodes16to18:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season03.Episodes19to21:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season03.Episodes22to25:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season04.Episodes01to03:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season04.Episodes04to06:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season04.Episodes07to09:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season04.Episodes10to12:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season04.Episodes13to15:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season04.Episodes16to18:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season04.Episodes19to21:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season04.Episodes22to24:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season05.Episodes01to03:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season05.Episodes04to06:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season05.Episodes07to09:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season05.Episodes10to12:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season05.Episodes13to15:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season05.Episodes16to18:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season05.Episodes19to21:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season05.Episodes22to24:
+    episodes: []
+    audio: []
+Friends.Season06.Episodes01to04:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season06.Episodes05to08:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season06.Episodes07to09:
+    episodes: [1,2,3]
+    audio: []
+Friends.Season06.Episodes09to12:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season06.Episodes13to16:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season06.Episodes17to20:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season06.Episodes21to25:
+    episodes: [1,2,3,6,7]
+    audio: []
+Friends.Season07.Episodes01to04:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season07.Episodes05to08:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season07.Episodes09to12:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season07.Episodes13to16:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season07.Episodes17to20:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season07.Episodes21to24:
+    episodes: [1,2,3,6]
+    audio: []
+Friends.Season08.Episodes01to04:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season08.Episodes05to08:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season08.Episodes09to12:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season08.Episodes13to16:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season08.Episodes17to20:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season08.Episodes21to24:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season09.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Friends.Season09.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Friends.Season09.Episodes09to12:
+    episodes: [2,3,4,5]
+    audio: []
+Friends.Season09.Episodes13to16:
+    episodes: [2,3,4,5]
+    audio: []
+Friends.Season09.Episodes17to20:
+    episodes: [2,3,4,5]
+    audio: []
+Friends.Season09.Episodes21to24:
+    episodes: [2,3,4,5]
+    audio: []
+Friends.Season10.Episodes01to04:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season10.Episodes05to08:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season10.Episodes09to12:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season10.Episodes13to16:
+    episodes: [3,5,6,7]
+    audio: []
+Friends.Season10.Episodes17to17:
+    episodes: [1]
+    audio: []
+GameOfThrones.Season01.Episodes01to02:
+    episodes: [1,2]
+    audio: [1,2,3,4,5,6]
+GameOfThrones.Season01.Episodes03to04:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season01.Episodes05to06:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season01.Episodes07to08:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season01.Episodes09to10:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season02.Episodes01to02:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season02.Episodes03to04:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season02.Episodes05to06:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season02.Episodes07to08:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season02.Episodes09to10:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season03.Episodes01to02:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season03.Episodes03to04:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season03.Episodes05to06:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season03.Episodes07to08:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season03.Episodes09to10:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season04.Episodes01to02:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season04.Episodes03to04:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season04.Episodes05to06:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season04.Episodes07to08:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season04.Episodes09to10:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season05.Episodes01to02:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season05.Episodes03to04:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season05.Episodes05to06:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season05.Episodes07to08:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season05.Episodes09to10:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season06.Episodes01to02:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season06.Episodes03to04:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season06.Episodes05to06:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season06.Episodes07to08:
+    episodes: [1,2]
+    audio: []
+GameOfThrones.Season06.Episodes09to10:
+    episodes: [1,2]
+    audio: []
+HarryPotter.Season01.Episodes01to01:
+    episodes: [1]
+    audio: [1,2,3]
+HarryPotter.Season01.Episodes02to02:
+    episodes: [1]
+    audio: []
+HarryPotter.Season01.Episodes03to03:
+    episodes: [1]
+    audio: []
+HarryPotter.Season01.Episodes04to04:
+    episodes: [1]
+    audio: []
+HarryPotter.Season01.Episodes05to05:
+    episodes: [1]
+    audio: []
+HarryPotter.Season01.Episodes06to06:
+    episodes: [1]
+    audio: []
+HarryPotter.Season01.Episodes07to07:
+    episodes: [1]
+    audio: []
+HarryPotter.Season01.Episodes08to08:
+    episodes: [1]
+    audio: []
+Homeland.Season01.Episodes01to03:
+    episodes: [1,3,4]
     audio: [1,2]
-    
-LOTR_THE_FELLOWSHIP_OF_THE_RING:
-    series: LeSeigneurDesAnneaux
-    season: 1
-    from: 1
-    to: 1
+Homeland.Season01.Episodes04to06:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season01.Episodes07to10:
+    episodes: [2,3,4,5]
+    audio: []
+Homeland.Season01.Episodes11to12:
+    episodes: [2,3]
+    audio: []
+Homeland.Season02.Episodes01to03:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season02.Episodes04to06:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season02.Episodes07to09:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season02.Episodes10to12:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season03.Episodes01to03:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season03.Episodes04to06:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season03.Episodes07to09:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season03.Episodes10to12:
+    episodes: [1,2,11]
+    audio: []
+Homeland.Season04.Episodes01to03:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season04.Episodes04to06:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season04.Episodes07to09:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season04.Episodes10to12:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season05.Episodes01to03:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season05.Episodes04to06:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season05.Episodes07to09:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season05.Episodes10to12:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season06.Episodes01to03:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season06.Episodes04to06:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season06.Episodes07to09:
+    episodes: [2,3,4]
+    audio: []
+Homeland.Season06.Episodes10to12:
+    episodes: [2,3,4]
+    audio: []
+LeSeigneurDesAnneaux.Season01.Episodes01to01:
     episodes: [1]
     audio: [1,2]
-    
-ER_S1_T5A_D1:
-    series: Urgences
-    season: 1
-    from: 1
-    to: 3
-    episodes: [2,3,4]   
+LeSeigneurDesAnneaux.Season01.Episodes02to02:
+    episodes: [1]
+    audio: []
+LeSeigneurDesAnneaux.Season01.Episodes03to03:
+    episodes: [1]
+    audio: []
+Lost.Season01.Episodes01to04:
+    episodes: []
+    audio: []
+Lost.Season01.Episodes05to08:
+    episodes: []
+    audio: []
+Lost.Season01.Episodes09to12:
+    episodes: []
+    audio: []
+Lost.Season01.Episodes13to16:
+    episodes: []
+    audio: []
+Lost.Season01.Episodes17to20:
+    episodes: []
+    audio: []
+Lost.Season01.Episodes21to24:
+    episodes: []
+    audio: []
+Lost.Season01.Episodes25to25:
+    episodes: []
+    audio: []
+Lost.Season02.Episodes01to04:
+    episodes: []
+    audio: []
+Lost.Season02.Episodes05to08:
+    episodes: []
+    audio: []
+Lost.Season02.Episodes09to12:
+    episodes: []
+    audio: []
+Lost.Season02.Episodes13to16:
+    episodes: []
+    audio: []
+Lost.Season02.Episodes17to20:
+    episodes: []
+    audio: []
+Lost.Season02.Episodes21to24:
+    episodes: []
+    audio: []
+Lost.Season03.Episodes01to04:
+    episodes: []
+    audio: []
+Lost.Season03.Episodes05to08:
+    episodes: []
+    audio: []
+Lost.Season03.Episodes09to12:
+    episodes: []
+    audio: []
+Lost.Season03.Episodes13to16:
+    episodes: []
+    audio: []
+Lost.Season03.Episodes17to20:
+    episodes: []
+    audio: []
+Lost.Season03.Episodes21to23:
+    episodes: []
+    audio: []
+Lost.Season04.Episodes01to03:
+    episodes: []
+    audio: []
+Lost.Season04.Episodes04to07:
+    episodes: []
+    audio: []
+Lost.Season04.Episodes08to11:
+    episodes: []
+    audio: []
+Lost.Season04.Episodes12to14:
+    episodes: []
+    audio: []
+Lost.Season05.Episodes01to03:
+    episodes: []
+    audio: []
+Lost.Season05.Episodes04to07:
+    episodes: []
+    audio: []
+Lost.Season05.Episodes08to11:
+    episodes: []
+    audio: []
+Lost.Season05.Episodes12to15:
+    episodes: []
+    audio: []
+Lost.Season05.Episodes16to17:
+    episodes: []
+    audio: []
+Lost.Season06.Episodes05to08:
+    episodes: []
+    audio: []
+Lost.Season06.Episodes09to12:
+    episodes: []
+    audio: []
+Lost.Season06.Episodes17to18:
+    episodes: []
+    audio: []
+SixFeetUnder.Season01.Episodes01to02:
+    episodes: [1,2]
+    audio: [1,2]
+SixFeetUnder.Season01.Episodes03to05:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season01.Episodes06to08:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season01.Episodes09to11:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season01.Episodes12to13:
+    episodes: [1,4]
+    audio: []
+SixFeetUnder.Season02.Episodes01to02:
+    episodes: [1,2]
+    audio: []
+SixFeetUnder.Season02.Episodes03to05:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season02.Episodes06to08:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season02.Episodes09to11:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season02.Episodes12to13:
+    episodes: [1,2]
+    audio: []
+SixFeetUnder.Season03.Episodes01to02:
+    episodes: [1,2]
+    audio: []
+SixFeetUnder.Season03.Episodes03to05:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season03.Episodes06to08:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season03.Episodes09to11:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season03.Episodes12to13:
+    episodes: [1,2]
+    audio: []
+SixFeetUnder.Season04.Episodes01to02:
+    episodes: [1,2]
+    audio: []
+SixFeetUnder.Season04.Episodes03to05:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season04.Episodes06to08:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season04.Episodes09to10:
+    episodes: [1,2]
+    audio: []
+SixFeetUnder.Season04.Episodes11to12:
+    episodes: [1,2]
+    audio: []
+SixFeetUnder.Season05.Episodes01to02:
+    episodes: [1,2]
+    audio: []
+SixFeetUnder.Season05.Episodes03to05:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season05.Episodes06to08:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season05.Episodes09to11:
+    episodes: [1,2,3]
+    audio: []
+SixFeetUnder.Season05.Episodes12to12:
+    episodes: [1]
+    audio: []
+StarWars.Season01.Episodes01to01:
+    episodes: [1]
     audio: [1,2,3]
-    
-BUFFY_DISC1:
-    series: Buffy
-    season: 1
-    from: 1
-    to: 4
-    episodes: [1,2,3,4]   
-    audio: [1,2]   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+StarWars.Season01.Episodes02to02:
+    episodes: [1]
+    audio: []
+StarWars.Season01.Episodes03to03:
+    episodes: [1]
+    audio: []
+StarWars.Season01.Episodes04to04:
+    episodes: [1]
+    audio: []
+StarWars.Season01.Episodes05to05:
+    episodes: [1]
+    audio: []
+StarWars.Season01.Episodes06to06:
+    episodes: [1]
+    audio: []
+StarWars.Season01.Episodes07to07:
+    episodes: [1]
+    audio: []
+TheBigBangTheory.Season01.Episodes01to06:
+    episodes: [2,3,4,5,6,7]
+    audio: [1,2]
+TheBigBangTheory.Season01.Episodes07to12:
+    episodes: [2,3,4,5,6,7]
+    audio: []
+TheBigBangTheory.Season01.Episodes13to17:
+    episodes: [2,3,4,5,6]
+    audio: []
+TheBigBangTheory.Season02.Episodes01to06:
+    episodes: [2,3,4,5,6,7]
+    audio: []
+TheBigBangTheory.Season02.Episodes07to12:
+    episodes: [2,3,4,5,6,7]
+    audio: []
+TheBigBangTheory.Season02.Episodes13to18:
+    episodes: [2,3,4,5,6,7]
+    audio: []
+TheBigBangTheory.Season02.Episodes19to23:
+    episodes: [2,3,4,5,6]
+    audio: []
+TheBigBangTheory.Season03.Episodes01to08:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season03.Episodes09to16:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season03.Episodes17to23:
+    episodes: [3,4,5,6,7,8,9]
+    audio: []
+TheBigBangTheory.Season04.Episodes01to08:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season04.Episodes09to16:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season04.Episodes17to24:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season05.Episodes01to08:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season05.Episodes09to16:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season05.Episodes17to24:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season06.Episodes01to08:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season06.Episodes09to16:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season06.Episodes17to24:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season07.Episodes01to08:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season07.Episodes09to16:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season07.Episodes17to24:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season08.Episodes01to08:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season08.Episodes09to16:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season08.Episodes17to24:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season09.Episodes01to08:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season09.Episodes09to16:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheBigBangTheory.Season09.Episodes17to24:
+    episodes: [3,4,5,6,7,8,9,10]
+    audio: []
+TheOffice.Season01.Episodes01to06:
+    episodes: [4,6,8,10,12,14]
+    audio: [1,2]
+TheOffice.Season02.Episodes01to06:
+    episodes: [4,6,8,10,12,14]
+    audio: []
+TheOffice.Season02.Episodes07to12:
+    episodes: [4,6,8,10,12,14]
+    audio: []
+TheOffice.Season02.Episodes13to18:
+    episodes: [4,6,8,10,12,14]
+    audio: []
+TheOffice.Season02.Episodes19to22:
+    episodes: [4,6,8,10]
+    audio: []
+TheOffice.Season03.Episodes01to07:
+    episodes: [6,7,8,9,10,11,12]
+    audio: []
+TheOffice.Season03.Episodes08to12:
+    episodes: [3,4,5,6,7]
+    audio: []
+TheOffice.Season03.Episodes13to19:
+    episodes: [5,6,7,8,9,10,11]
+    audio: []
+TheOffice.Season03.Episodes20to25:
+    episodes: [3,4,5,6,7,8]
+    audio: []
+TheOffice.Season04.Episodes01to06:
+    episodes: [3,5,7,9,11,13]
+    audio: []
+TheOffice.Season04.Episodes07to11:
+    episodes: [3,5,7,9,11]
+    audio: []
+TheOffice.Season04.Episodes12to15:
+    episodes: [3,5,7,9]
+    audio: []
+TheOffice.Season04.Episodes16to19:
+    episodes: [3,5,7,9]
+    audio: []
+TheOffice.Season05.Episodes01to05:
+    episodes: [7,9,11,13,15]
+    audio: []
+TheOffice.Season05.Episodes06to11:
+    episodes: [7,9,11,13,15,17]
+    audio: []
+TheOffice.Season05.Episodes12to17:
+    episodes: [7,9,11,13,15,17]
+    audio: []
+TheOffice.Season05.Episodes18to23:
+    episodes: [7,9,11,13,15,17]
+    audio: []
+TheOffice.Season05.Episodes24to28:
+    episodes: [7,9,11,13,15]
+    audio: []
+TheOffice.Season06.Episodes01to05:
+    episodes: [7,8,9,10,11]
+    audio: []
+TheOffice.Season06.Episodes06to10:
+    episodes: [7,8,9,10,11]
+    audio: []
+TheOffice.Season06.Episodes11to15:
+    episodes: []
+    audio: []
+TheOffice.Season06.Episodes16to20:
+    episodes: [7,8,9,10,11]
+    audio: []
+TheOffice.Season06.Episodes21to26:
+    episodes: []
+    audio: []
+TheOffice.Season07.Episodes01to05:
+    episodes: [6,10,12,14,16]
+    audio: []
+TheOffice.Season07.Episodes06to10:
+    episodes: [6,8,10,12,14]
+    audio: []
+TheOffice.Season07.Episodes11to16:
+    episodes: [6,8,14,20,26,28]
+    audio: []
+TheOffice.Season07.Episodes17to21:
+    episodes: [1,5,7,9,11]
+    audio: []
+TheOffice.Season07.Episodes22to27:
+    episodes: [6,8,10,32,36,38]
+    audio: []
+TheOffice.Season08.Episodes01to06:
+    episodes: [4,5,6,13,14,15]
+    audio: []
+TheOffice.Season08.Episodes07to12:
+    episodes: [4,5,6,13,14,15]
+    audio: []
+TheOffice.Season08.Episodes13to18:
+    episodes: [4,5,6,19,20,21]
+    audio: []
+TheOffice.Season08.Episodes19to24:
+    episodes: [9,10,11,14,15,16]
+    audio: []
+TheOffice.Season09.Episodes01to06:
+    episodes: [1,2,3,4,5,6]
+    audio: []
+TheOffice.Season09.Episodes07to12:
+    episodes: [1,2,3,4,5,6]
+    audio: []
+TheOffice.Season09.Episodes13to17:
+    episodes: [1,2,3,4,5]
+    audio: []
+TheOffice.Season09.Episodes18to22:
+    episodes: [1,2,3,4,5]
+    audio: []
+TheOffice.Season09.Episodes23to23:
+    episodes: [1]
+    audio: []
+TheWalkingDead.Season01.Episodes01to04:
+    episodes: [1,2,3,4] 
+    audio: [1,2]
+TheWalkingDead.Season01.Episodes05to06:
+    episodes: [1,2]
+    audio: []
+TheWalkingDead.Season02.Episodes01to04:
+    episodes: [6,7,8,9]
+    audio: []
+TheWalkingDead.Season02.Episodes05to08:
+    episodes: [5,6,7,8]
+    audio: []
+TheWalkingDead.Season02.Episodes09to13:
+    episodes: [5,6,7,8,9]
+    audio: []
+TheWalkingDead.Season03.Episodes01to04:
+    episodes: [49,50,51,52]
+    audio: []
+TheWalkingDead.Season03.Episodes05to08:
+    episodes: [49,50,51,52]
+    audio: []
+TheWalkingDead.Season03.Episodes09to12:
+    episodes: [49,50,51,52]
+    audio: []
+TheWalkingDead.Season03.Episodes13to16:
+    episodes: [49,50,51,52]
+    audio: []
+TheWalkingDead.Season04.Episodes01to04:
+    episodes: [21,40,42,44]
+    audio: []
+TheWalkingDead.Season04.Episodes05to08:
+    episodes: [43,44,45,46]
+    audio: []
+TheWalkingDead.Season04.Episodes09to12:
+    episodes: [21,39,41,43]
+    audio: []
+TheWalkingDead.Season04.Episodes13to16:
+    episodes: [21,39,42,44]
+    audio: []
+TheWalkingDead.Season05.Episodes01to04:
+    episodes: [21,41,43,45]
+    audio: []
+TheWalkingDead.Season05.Episodes05to08:
+    episodes: [21,41,43,45]
+    audio: []
+TheWalkingDead.Season05.Episodes09to12:
+    episodes: [20,39,42,44]
+    audio: []
+TheWalkingDead.Season05.Episodes13to15:
+    episodes: [20,41,43]
+    audio: []
+TheWalkingDead.Season05.Episodes16to16:
+    episodes: [22]
+    audio: []
+TheWalkingDead.Season06.Episodes01to03:
+    episodes: [21,40,42]
+    audio: []
+TheWalkingDead.Season06.Episodes04to06:
+    episodes: [21,40,42]
+    audio: []
+TheWalkingDead.Season06.Episodes07to09:
+    episodes: [21,39,42]
+    audio: []
+TheWalkingDead.Season06.Episodes10to13:
+    episodes: [20,38,40,43]
+    audio: []
+TheWalkingDead.Season06.Episodes14to16:
+    episodes: [21,39,42]
+    audio: []
+TheWalkingDead.Season07.Episodes01to03:
+    episodes: [36,38,73]
+    audio: []
+TheWalkingDead.Season07.Episodes04to06:
+    episodes: [36,38,73]
+    audio: []
+TheWalkingDead.Season07.Episodes07to09:
+    episodes: [36,38,73]
+    audio: []
+TheWalkingDead.Season07.Episodes10to13:
+    episodes: [36,38,73,75]
+    audio: []
+TheWalkingDead.Season07.Episodes14to16:
+    episodes: [36,38,73]
+    audio: []
+Urgences.Season01.Episodes01to03:
+    episodes: [2,3,4]
+    audio: [1,2,3]
+Urgences.Season01.Episodes04to07:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season01.Episodes08to11:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season01.Episodes12to15:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season01.Episodes16to19:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season01.Episodes20to23:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season01.Episodes24to25:
+    episodes: [2,3]
+    audio: []
+Urgences.Season02.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season02.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season02.Episodes09to12:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season02.Episodes13to16:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season02.Episodes17to19:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season02.Episodes20to22:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season03.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season03.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season03.Episodes09to12:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season03.Episodes13to16:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season03.Episodes17to19:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season03.Episodes20to22:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season04.Episodes01to04:
+    episodes: [3,4,5,12]
+    audio: []
+Urgences.Season04.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season04.Episodes09to12:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season04.Episodes13to16:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season04.Episodes17to19:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season04.Episodes20to22:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season05.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season05.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season05.Episodes09to11:
+    episodes: []
+    audio: []
+Urgences.Season05.Episodes12to15:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season05.Episodes16to19:
+    episodes: []
+    audio: []
+Urgences.Season05.Episodes20to22:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season06.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season06.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season06.Episodes09to11:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season06.Episodes12to15:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season06.Episodes16to19:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season06.Episodes20to22:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season07.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season07.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season07.Episodes09to11:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season07.Episodes12to15:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season07.Episodes16to19:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season07.Episodes20to22:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season08.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season08.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season08.Episodes09to11:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season08.Episodes12to15:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season08.Episodes16to19:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season08.Episodes20to22:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season09.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season09.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season09.Episodes09to11:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season09.Episodes12to15:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season09.Episodes16to19:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season09.Episodes20to22:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season10.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season10.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season10.Episodes09to11:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season10.Episodes12to15:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season10.Episodes16to19:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season10.Episodes20to22:
+    episodes: [2,3,4]
+    audio: []
+Urgences.Season11.Episodes01to04:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season11.Episodes05to08:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season11.Episodes09to11:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season11.Episodes12to15:
+    episodes: [3,4,5,9]
+    audio: []
+Urgences.Season11.Episodes16to19:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season11.Episodes20to22:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season12.Episodes01to04:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season12.Episodes05to08:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season12.Episodes09to11:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season12.Episodes12to15:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season12.Episodes16to19:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season12.Episodes20to22:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season13.Episodes01to04:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season13.Episodes05to08:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season13.Episodes09to12:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season13.Episodes13to16:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season13.Episodes17to20:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season13.Episodes21to23:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season14.Episodes01to03:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season14.Episodes04to06:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season14.Episodes07to09:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season14.Episodes10to13:
+    episodes: [3,4,5,6]
+    audio: []
+Urgences.Season14.Episodes14to16:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season14.Episodes17to19:
+    episodes: [3,4,5]
+    audio: []
+Urgences.Season15.Episodes01to04:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season15.Episodes05to08:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season15.Episodes09to12:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season15.Episodes13to16:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season15.Episodes17to20:
+    episodes: [2,3,4,5]
+    audio: []
+Urgences.Season15.Episodes21to22:
+    episodes: [2,3]
+    audio: []

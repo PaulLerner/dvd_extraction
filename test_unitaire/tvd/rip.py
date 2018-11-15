@@ -88,7 +88,14 @@ class Ripper(object):
                 i += 1
 
     def get_contentTitle(self, content):
-        return content.getElementsByTagName('title')[0].firstChild.data
+        title = content.getElementsByTagName('title')[0].firstChild.data #title
+        if title.lower() != 'unknown':
+            return title
+        provider_id = content.getElementsByTagName('provider_id')[0].firstChild
+        if provider_id:
+            return provider_id.data
+        else:
+            return provider_id
 
     def get_tracks(self, content):
         track = content.getElementsByTagName('track')
@@ -104,6 +111,20 @@ class Ripper(object):
             tracks.append(t)
 
         return tracks
+    
+    def get_episodes(self, tracks, first, last):
+        nbEpisodes = (last - first) + 1
+
+        if nbEpisodes > 1 and tracks[0].duration > tracks[1].duration*1.5 :
+            return tracks[1:nbEpisodes+1]
+        else:
+            return tracks[0:nbEpisodes]
+
+    def sort_tracks(self, tracks):
+        return sorted(tracks, key=lambda x: x.duration, reverse=True)
+
+    def sort_episodes(self, episodes):
+        return sorted(episodes, key=lambda x: x.title)
 
     def get_languages(self, content, first, last):
         audios = []
@@ -198,21 +219,6 @@ class Ripper(object):
 
         return subtitles
 
-
-    def get_episodes(self, tracks, first, last):
-        nbEpisodes = (last - first) + 1
-
-        if nbEpisodes > 1 and tracks[0].duration > tracks[1].duration*1.5 :
-            return tracks[1:nbEpisodes+1]
-        else:
-            return tracks[0:nbEpisodes]
-
-    def sort_tracks(self, tracks):
-        return sorted(tracks, key=lambda x: x.duration, reverse=True)
-
-    def sort_episodes(self, episodes):
-        return sorted(episodes, key=lambda x: x.title)
-
     def print_tracks(self, tracks):
         for t in tracks:
             print('Title ' + t.title + ' : ' + str(t.duration))
@@ -222,15 +228,15 @@ class Ripper(object):
         for i, e in enumerate(episodes):
             print('Episode ' + str(i+1) + ' : title -> ' + e.title + ' | duration -> ' + str(e.duration))
 
-    def print_contentTitle(self, content):
-        print('Content title : ' + self.get_contentTitle(content))
-
 class Track:
     def __init__(self, ix, length, vts, ttn):
         self.title = str(ix)
         self.duration = float(length)
         self.vts = float(vts)
         self.ttn = float(ttn)
+        
+        def __str__(self):
+            return 'title ' + self.title + ' duration ' + str(self.duration) + ' vts ' + str(self.vts) + ' ttn ' + str(self.ttn)
 
 class Audio:
     def __init__(self, title, language, langcode, channels):
