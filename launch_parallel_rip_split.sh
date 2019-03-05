@@ -11,7 +11,7 @@ seuil_mem=0.5
 
 name=( {a..z} )
 i=0
-for m in m148 m149 m150 m173 m174 m175 #m154 m155 m156 m157 m158 m159 m160 m161 m162 m163 m164 m165 m166 m168 m169
+for m in m148 m149 m150 m173 m174 m175 #m153 m154 m155 m156 m157 m158 m159 m160 m161 m162 m163 m164 m165 m166 m168 m169
 do
   echo $m
   echo $1a${name[i]}

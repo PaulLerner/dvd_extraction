@@ -2,7 +2,7 @@ import os
 import argparse
 import subprocess
 
-input_path = '/vol/work3/maurice/dvd'
+input_path = '/vol/work2/maurice/dvd'
 output_rip = '/vol/work1/maurice/rip_temp/'
 
 parser = argparse.ArgumentParser()
